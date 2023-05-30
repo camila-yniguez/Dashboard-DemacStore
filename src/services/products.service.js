@@ -1,4 +1,4 @@
-const BASE_PRODUCTS_URL_API = "http://localhost:3000/api/products"
+const BASE_PRODUCTS_URL_API = "http://localhost:3001/api/products"
 
 export const getProducts = async () => {
     try {
