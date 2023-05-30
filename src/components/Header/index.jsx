@@ -1,6 +1,6 @@
 import styles from "./index.module.css"
 
-export const Header = ({userName = "Jona"}) => {
+export const Header = ({userName = "Admin"}) => {
   return (
     <>
       {/* <!-- Topbar --> */}

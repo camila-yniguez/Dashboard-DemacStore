@@ -34,7 +34,8 @@ export const Sidebar = () => {
 
         {/* <!-- Nav Items --> */}
        
-        <NavItem href="/" icon="fa-box" name="ABM - Productos"/>
+        <NavItem href="/products" icon="fa-box" name="ABM - Productos"/>
+        <NavItem href="/users" icon="fa-users" name="ABM - Usuarios"/>
 
         {/* <!-- Divider --> */}
         <hr className="sidebar-divider d-none d-md-block" />

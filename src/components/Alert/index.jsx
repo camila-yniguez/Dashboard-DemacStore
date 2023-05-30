@@ -6,17 +6,7 @@ const ALERT_TIME = 2000;
 
 export const Alert = ({ alert, setAlert }) => {
   const { message, type, show } = alert;
-  /* 
-        Los tipos de alerta que acepta son los de bootstrap: 
-        - primary
-        - secondary
-        - success
-        - danger
-        - warning
-        - info
-        - ligth
-        - dark
-    */
+
   useEffect(() => {
     if (!show) return;
 
