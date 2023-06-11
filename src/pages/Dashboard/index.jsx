@@ -8,6 +8,7 @@ import { generateCards } from "../../helpers/dashboard.helper";
 import { Alert } from "../../components/Alert";
 import { ShowError } from "../../components/Error";
 import { CategoriesChart } from "../../components/CategoriesChart";
+import { SubcategoriesChart } from "../../components/SubcategoriesChart";
 
 export const Dashboard = () => {
   const [products, setProducts] = useState(null);
@@ -91,6 +92,9 @@ export const Dashboard = () => {
       <div className="row">
         <LastDataContainer type="product" data={lastProductCreated} />
         <LastDataContainer type="user" data={lastUserCreated} />
+      </div>
+      <div className="row">
+            <SubcategoriesChart countBySubcategory={products?.countBySubcategory} />
       </div>
       <div className="row">
             <CategoriesChart countByCategory={products?.countByCategory}/>
