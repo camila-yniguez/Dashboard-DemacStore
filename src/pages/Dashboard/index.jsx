@@ -8,7 +8,6 @@ import { generateCards } from "../../helpers/dashboard.helper";
 import { Alert } from "../../components/Alert";
 import { ShowError } from "../../components/Error";
 import { CategoriesChart } from "../../components/CategoriesChart";
-import { SubcategoriesChart } from "../../components/SubcategoriesChart";
 
 export const Dashboard = () => {
   const [products, setProducts] = useState(null);
