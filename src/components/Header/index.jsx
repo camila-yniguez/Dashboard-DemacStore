@@ -8,7 +8,7 @@ export const Header = ({userName = "Admin"}) => {
         {/* <!-- Sidebar Toggle (Topbar) --> */}
 
         {/* <!-- Topbar Navbar --> */}
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto text-white">
          
           <div className="topbar-divider d-none d-sm-block"></div>
 
@@ -17,7 +17,7 @@ export const Header = ({userName = "Admin"}) => {
               <i
                 className={`fas fa-user ${styles.userLogo}`}
               ></i>
-              <span className="text-gray-600 small text-center">
+              <span className="text-white-600 small text-center">
                 {userName}
               </span>
           </li>

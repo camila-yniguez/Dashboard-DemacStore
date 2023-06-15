@@ -5,8 +5,9 @@ export const Footer = ({autor}) => {
       <footer className="sticky-footer bg-dark">
         <div className="container my-auto">
           <div className="copyright text-center my-auto">
-            <span>Copyright &copy; {autor}</span>
+            <span className="text-white">Copyright &copy; {autor}</span>
           </div>
+          
         </div>
       </footer>
       {/* <!-- End of Footer --> */}
