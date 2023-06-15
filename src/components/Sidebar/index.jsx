@@ -36,7 +36,7 @@ export const Sidebar = () => {
        
         <NavItem href="/products" icon="fa-box" name="Productos"/>
         <NavItem href="/users" icon="fa-users" name="Usuarios"/>
-        <NavItem href="/orders" icon="fa-solid fa-receipt" name="Orders" />
+        <NavItem href="http://localhost:3000/" icon="fa-solid fa-receipt" name="Contacto" />
 
         {/* <!-- Divider --> */}
         <hr className="sidebar-divider d-none d-md-block" />

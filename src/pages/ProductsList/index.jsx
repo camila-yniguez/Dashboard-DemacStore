@@ -6,21 +6,21 @@ import { Loading } from "../../components/Loading";
 import { Alert, Typography } from "@mui/material";
 import styles from "./index.module.css";
 
+
 const columns = [
   { field: "id", headerName: "ID", width: 90 },
   {
     field: "name",
     headerName: "Nombre",
-    width: 150,
+    width: 350,
     editable: true,
   },
   {
     field: "description",
     headerName: "Descripción",
-    width: 150,
+    width: 850,
     editable: true,
-  }
-  
+  },
 ];
 
 export const ProductList = () => {
@@ -60,8 +60,9 @@ export const ProductList = () => {
   return (
     <section>
         { alert.isOpen && ( <Alert alert={alert} setAlert={setAlert}/> ) }
-        <Typography paddingLeft={10} variant="h4">Listado de productos</Typography>
-
+        <div className={styles.titleContainer}>
+          <Typography variant="h4">Listado de productos</Typography>
+        </div>
         <Box className={styles.tableContainer}>
           <DataGrid
             rows={products}
@@ -70,11 +71,11 @@ export const ProductList = () => {
             initialState={{
               pagination: {
                 paginationModel: {
-                  pageSize: 5,
+                  pageSize: 10,
                 },
               },
             }}
-            pageSizeOptions={[5]}
+            pageSizeOptions={[10]}
             checkboxSelection
             disableRowSelectionOnClick
           />

@@ -1,14 +1,11 @@
 .tableContainer {
-    width: 80%;
-    height: 400px;
-    margin: 0 auto;
-    padding: 3rem;
-  }
-  
-  .MuiDataGrid-row {
-    &:nth-child(odd) {
-      background-color: blue;
-      color: white;
-    }
-  }
-  
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}

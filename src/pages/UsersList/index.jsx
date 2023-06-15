@@ -11,16 +11,15 @@ const columns = [
   {
     field: "username",
     headerName: "Nombre de usuario",
-    width: 150,
+    width: 250,
     editable: true,
   },
   {
     field: "email",
     headerName: "Email",
-    width: 150,
+    width: 250,
     editable: true,
-  }
-  
+  },
 ];
 
 export const UsersList = () => {
@@ -67,8 +66,9 @@ export const UsersList = () => {
   return (
     <section>
         { alert.isOpen && ( <Alert alert={alert} setAlert={setAlert}/> ) }
-        <Typography paddingLeft={10} variant="h4">Listado de usuarios</Typography>
-
+        <div className={styles.titleContainer}>
+          <Typography variant="h4">Listado de usuarios</Typography>
+        </div>
         <Box className={styles.tableContainer}>
             <DataGrid
                 rows={users}
@@ -77,11 +77,11 @@ export const UsersList = () => {
                 initialState={{
                 pagination: {
                     paginationModel: {
-                    pageSize: 5,
+                    pageSize: 10,
                     },
                 },
                 }}
-                pageSizeOptions={[5]}
+                pageSizeOptions={[10]}
                 checkboxSelection
                 disableRowSelectionOnClick
             />
